@@ -1,2 +1,9 @@
-[InternetShortcut]
-URL=https://github.com/GOKUL000016/Computer-Vision/blob/main/10.%2090-Degree%20Clockwise%20Rotation.py
+import cv2 
+# Load the image 
+img = cv2.imread("input.jpg") 
+# Rotate 90 degrees clockwise 
+rotated_img = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE) 
+# Display the rotated image 
+cv2.imshow("Rotated Image", rotated_img) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
