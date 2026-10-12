@@ -1,2 +1,7 @@
-[InternetShortcut]
-URL=https://github.com/GOKUL000016/Computer-Vision/blob/main/2.%20Convert%20Image%20to%20Blur%20using%20Gaussian%20Blur.py
+import cv2 
+image = cv2.imread("sample.jpg")  # Replace with your image file 
+blurred_image = cv2.GaussianBlur(image, (15, 15), 0)  # (15, 15) is the kernel size 
+cv2.imshow("Original Image", image) 
+cv2.imshow("Blurred Image", blurred_image) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
